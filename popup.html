@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="text-center mt-5">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#login">Edit</button>
+   </div>
+   <div class="modal fade" id="login">
+     <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Edit</h3>
+          <button class="btn btn-danger" data-dismiss="modal">×</button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label">Task</label>
+            <input class="form-control" type="text">
+          </div>
+          <div class="form-group">
+             <label class="form-label">Hours</label>
+             <input class="form-control" type="text">
+          </div>
+          <div class="Selects">
+            <label for="Project">Project</label>
+            <select name="Projects" id="Project">
+                <option value="">Select a Project</option>
+                <option value="Project A">Project A</option>
+                <option value="Project B">Project B</option>
+                 
+            </select>
+         </div>
+         <br>
+            <div class="Selects">
+                <label for="Activity">Activity</label>
+                <select name="Activities" id="Activity">
+                    <option value="">Select a Project</option>
+                    <option value="Activity A">Activity A</option>
+                    <option value="Activity B">Activity B</option>
+                     
+                </select>
+             </div>
+        </div>
+        <hr>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button class="btn btn-success" >Submit</button>
+        </div>
+      </div>
+     </div>
+   </div>
+</body>
+</html>

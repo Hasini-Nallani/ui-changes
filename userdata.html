@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>userdata</title>
+</head>
+<body>
+    <div class="container">
+        <table class="table  table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Activity</th>
+              <th>Task</th>
+              <th>Monday</th>
+              <th>Tuseday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+              <th>Edit/Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Project 1</td>
+              <td>Activity 1</td>
+              <td>Task 1</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login">Edit</button>
+                <button type="button" class="btn btn-danger">Delete</button></td>
+                <div class="modal fade" id="login">
+                    <div class="modal-dialog">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <h2>Edit</h2><div class="text-right-corner"><button class="btn btn-danger" data-dismiss="modal">x</button></div>
+                       </div>
+                       <div class="modal-body">
+                         <div class="form-group">
+                           <label class="form-label">Task</label>
+                           <input class="form-control" type="text">
+                         </div>
+                         <div class="form-group">
+                            <label class="form-label">Hours</label>
+                            <input class="form-control" type="text">
+                         </div>
+                         <div class="Selects">
+                           <label for="Project">Project</label>
+                           <select name="Projects" id="Project">
+                               <option value="">Select a Project</option>
+                               <option value="Project A">Project A</option>
+                               <option value="Project B">Project B</option>
+                                
+                           </select>
+                        </div>
+                        <br>
+                           <div class="Selects">
+                               <label for="Activity">Activity</label>
+                               <select name="Activities" id="Activity">
+                                   <option value="">Select a Project</option>
+                                   <option value="Activity A">Activity A</option>
+                                   <option value="Activity B">Activity B</option>
+                                    
+                               </select>
+                            </div>
+                       </div>
+                       <hr>
+                       <div class="modal-footer">
+                         <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                         <button class="btn btn-success" >Submit</button>
+                       </div>
+                     </div>
+                    </div>
+                  </div>
+      
+            </tr>
+            <tr>
+              <td>Project 2</td>
+              <td>Activity 2</td>
+              <td>Task 2</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login">Edit</button>
+                
+                <button type="button" class="btn btn-danger">Delete</button></td>
+                <div class="modal fade" id="login">
+                    <div class="modal-dialog">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <h3>
+                           Edit Timesheet data
+                         </h3>
+
+                          <!-- <button class="btn btn-danger" data-dismiss="modal">×</button>   -->
+                       </div>
+                       <div class="modal-body">
+                         <div class="form-group">
+                           <label class="form-label">Task</label>
+                           <input class="form-control" type="text">
+                         </div>
+                         <div class="form-group">
+                            <label class="form-label">Hours</label>
+                            <input class="form-control" type="text">
+                         </div>
+                         <div class="Selects">
+                           <label for="Project">Project</label>
+                           <select name="Projects" id="Project">
+                               <option value="">Select a Project</option>
+                               <option value="Project A">Project A</option>
+                               <option value="Project B">Project B</option>
+                                
+                           </select>
+                        </div>
+                        <br>
+                           <div class="Selects">
+                               <label for="Activity">Activity</label>
+                               <select name="Activities" id="Activity">
+                                   <option value="">Select a Project</option>
+                                   <option value="Activity A">Activity A</option>
+                                   <option value="Activity B">Activity B</option>
+                                    
+                               </select>
+                            </div>
+                       </div>
+                       <hr>
+                       <div class="modal-footer">
+                         <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                         <button class="btn btn-success" >Submit</button>
+                       </div>
+                     </div>
+                    </div>
+                  </div>
+            </tr>
+            <tr>
+              <td colspan="3">Total Hours</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+               
+            </tr>
+          </tbody>
+       
+      
+       </table> 
+     
+     </div>
+     
+    
+</body>
+</html>
